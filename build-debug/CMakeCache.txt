@@ -15,6 +15,24 @@
 ########################
 
 //Value Computed by CMake
+ACEEngine_BINARY_DIR:STATIC=C:/Users/Damien/CLionProjects/ACE/build-debug/Engine
+
+//Value Computed by CMake
+ACEEngine_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+ACEEngine_SOURCE_DIR:STATIC=C:/Users/Damien/CLionProjects/ACE/Engine
+
+//Value Computed by CMake
+ACEMemoryManager_BINARY_DIR:STATIC=C:/Users/Damien/CLionProjects/ACE/build-debug/Engine/Source/ArcadiaCore/Modules/ACEMemoryManager
+
+//Value Computed by CMake
+ACEMemoryManager_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+ACEMemoryManager_SOURCE_DIR:STATIC=C:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEMemoryManager
+
+//Value Computed by CMake
 ACE_BINARY_DIR:STATIC=C:/Users/Damien/CLionProjects/ACE/build-debug
 
 //Value Computed by CMake
@@ -22,6 +40,15 @@ ACE_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 ACE_SOURCE_DIR:STATIC=C:/Users/Damien/CLionProjects/ACE
+
+//Value Computed by CMake
+AModule_BINARY_DIR:STATIC=C:/Users/Damien/CLionProjects/ACE/build-debug/Engine/Source/ArcadiaCore/AModule
+
+//Value Computed by CMake
+AModule_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+AModule_SOURCE_DIR:STATIC=C:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=C:/Program Files/JetBrains/CLion 2024.1.4/bin/mingw/bin/addr2line.exe
@@ -128,7 +155,7 @@ CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/ACE
 CMAKE_LINKER:FILEPATH=C:/Program Files/JetBrains/CLion 2024.1.4/bin/mingw/bin/ld.exe
 
 //make program
-CMAKE_MAKE_PROGRAM:FILEPATH=C:/Program Files/JetBrains/CLion 2024.1.4/bin/ninja/win/x64/ninja.exe
+CMAKE_MAKE_PROGRAM:FILEPATH=C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/ninja/win/x64/ninja.exe
 
 //Flags used by the linker during the creation of modules during
 // all build types.
@@ -354,7 +381,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

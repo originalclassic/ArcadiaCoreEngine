@@ -1,30 +1,30 @@
-# ACE/Engine/CMakeLists.txt
 cmake_minimum_required(VERSION 3.28)
 project(ACEEngine)
 
-# Set the C++ standard
+# Set C++ standard
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Add subdirectories
+add_subdirectory(Source/ArcadiaCore/AModule)
 add_subdirectory(Source/ArcadiaCore/Modules/ACEMemoryManager)
 
-# Add your engine source files here
+# Define engine source files
 set(ENGINE_SOURCES
-        # List your source files here
+        ${CMAKE_CURRENT_SOURCE_DIR}/Source/ArcadiaCore/Private/UACERenderer.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/Source/ArcadiaCore/Private/UACEEngine.cpp
+        # Add other engine source files here
 )
 
-# Create the main engine library or executable
+# Create the main engine library
 add_library(ACEEngine STATIC ${ENGINE_SOURCES})
 
-# Link the ACEMemoryManager library to the engine
-target_link_libraries(ACEEngine PRIVATE ACEMemoryManager)
+# Link the ACEMemoryManager and AModule libraries to the engine
+target_link_libraries(ACEEngine PRIVATE ACEMemoryManager AModule)
 
-# Optionally, specify include directories for the engine
+# Specify include directories for the engine
 target_include_directories(ACEEngine PUBLIC
-        ${CMAKE_CURRENT_SOURCE_DIR}/Source/ArcadiaCore/Modules/ACEMemoryManager/include
-        ${CMAKE_CURRENT_SOURCE_DIR}/Source/ArcadiaCore/include
+        ${CMAKE_CURRENT_SOURCE_DIR}/Source/ArcadiaCore/AModule/Public
+        ${CMAKE_CURRENT_SOURCE_DIR}/Source/ArcadiaCore/Modules/ACEMemoryManager/Public
+        ${CMAKE_CURRENT_SOURCE_DIR}/Source/ArcadiaCore/Public
 )
-
-# Optionally, add any other required directories
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Source/ArcadiaCore/include)

@@ -1,0 +1,17 @@
+{
+    "ModuleName": "ACEMemoryManager",
+    "Description": "Memory management module for ACE Engine.",
+    "Version": "1.0.0",
+    "Dependencies": [
+        "ACECodeFlow"  // Example dependency, if there are any
+    ],
+    "PublicIncludeDirectories": [
+        "Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/include"
+    ],
+    "SourceFiles": [
+        "Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/src/FACEPoolAllocator.cpp",
+        "Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/src/FACEFreeListAllocator.cpp",
+        "Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/src/FACEStackAllocator.cpp",
+        "Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/src/FACEAllocator.cpp"
+    ]
+}

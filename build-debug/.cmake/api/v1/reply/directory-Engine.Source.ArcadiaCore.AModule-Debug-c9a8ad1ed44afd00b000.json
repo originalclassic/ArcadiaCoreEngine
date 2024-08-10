@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "Engine/Source/ArcadiaCore/AModule",
+		"source" : "Engine/Source/ArcadiaCore/AModule"
+	}
+}

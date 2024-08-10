@@ -49,25 +49,21 @@ cmake_ninja_workdir = C$:/Users/Damien/CLionProjects/ACE/build-debug/
 
 build cmake_object_order_depends_target_ACE: phony || CMakeFiles/ACE.dir
 
-build CMakeFiles/ACE.dir/Engine/Source/ArcadiaCore/Private/UACEEngine.cpp.obj: CXX_COMPILER__ACE_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Private/UACEEngine.cpp || cmake_object_order_depends_target_ACE
-  DEFINES = -DACE_EXPORTS
-  DEP_FILE = CMakeFiles\ACE.dir\Engine\Source\ArcadiaCore\Private\UACEEngine.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public -IC:/Users/Damien/CLionProjects/ACE/Game/Source/GameProject/Public
-  OBJECT_DIR = CMakeFiles\ACE.dir
-  OBJECT_FILE_DIR = CMakeFiles\ACE.dir\Engine\Source\ArcadiaCore\Private
-  TARGET_COMPILE_PDB = CMakeFiles\ACE.dir\
-  TARGET_PDB = libACE.pdb
-
 build CMakeFiles/ACE.dir/Engine/Source/ArcadiaCore/Private/UACERenderer.cpp.obj: CXX_COMPILER__ACE_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Private/UACERenderer.cpp || cmake_object_order_depends_target_ACE
   DEFINES = -DACE_EXPORTS
   DEP_FILE = CMakeFiles\ACE.dir\Engine\Source\ArcadiaCore\Private\UACERenderer.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public -IC:/Users/Damien/CLionProjects/ACE/Game/Source/GameProject/Public
   OBJECT_DIR = CMakeFiles\ACE.dir
   OBJECT_FILE_DIR = CMakeFiles\ACE.dir\Engine\Source\ArcadiaCore\Private
-  TARGET_COMPILE_PDB = CMakeFiles\ACE.dir\
-  TARGET_PDB = libACE.pdb
+
+build CMakeFiles/ACE.dir/Engine/Source/ArcadiaCore/Private/UACEEngine.cpp.obj: CXX_COMPILER__ACE_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Private/UACEEngine.cpp || cmake_object_order_depends_target_ACE
+  DEFINES = -DACE_EXPORTS
+  DEP_FILE = CMakeFiles\ACE.dir\Engine\Source\ArcadiaCore\Private\UACEEngine.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public -IC:/Users/Damien/CLionProjects/ACE/Game/Source/GameProject/Public
+  OBJECT_DIR = CMakeFiles\ACE.dir
+  OBJECT_FILE_DIR = CMakeFiles\ACE.dir\Engine\Source\ArcadiaCore\Private
 
 
 # =============================================================================
@@ -77,17 +73,16 @@ build CMakeFiles/ACE.dir/Engine/Source/ArcadiaCore/Private/UACERenderer.cpp.obj:
 #############################################
 # Link the shared library libACE.dll
 
-build libACE.dll libACE.dll.a: CXX_SHARED_LIBRARY_LINKER__ACE_Debug CMakeFiles/ACE.dir/Engine/Source/ArcadiaCore/Private/UACEEngine.cpp.obj CMakeFiles/ACE.dir/Engine/Source/ArcadiaCore/Private/UACERenderer.cpp.obj
+build libACE.dll libACE.dll.a: CXX_SHARED_LIBRARY_LINKER__ACE_Debug CMakeFiles/ACE.dir/Engine/Source/ArcadiaCore/Private/UACERenderer.cpp.obj CMakeFiles/ACE.dir/Engine/Source/ArcadiaCore/Private/UACEEngine.cpp.obj
   LANGUAGE_COMPILE_FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ACE.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
   RESTAT = 1
-  TARGET_COMPILE_PDB = CMakeFiles\ACE.dir\
   TARGET_FILE = libACE.dll
   TARGET_IMPLIB = libACE.dll.a
-  TARGET_PDB = libACE.pdb
+  TARGET_PDB = ACE.dll.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target GameProject
@@ -100,12 +95,10 @@ build cmake_object_order_depends_target_GameProject: phony || cmake_object_order
 
 build CMakeFiles/GameProject.dir/Game/Source/GameProject/Private/main.cpp.obj: CXX_COMPILER__GameProject_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Game/Source/GameProject/Private/main.cpp || cmake_object_order_depends_target_GameProject
   DEP_FILE = CMakeFiles\GameProject.dir\Game\Source\GameProject\Private\main.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public -IC:/Users/Damien/CLionProjects/ACE/Game/Source/GameProject/Public
   OBJECT_DIR = CMakeFiles\GameProject.dir
   OBJECT_FILE_DIR = CMakeFiles\GameProject.dir\Game\Source\GameProject\Private
-  TARGET_COMPILE_PDB = CMakeFiles\GameProject.dir\
-  TARGET_PDB = GameProject.pdb
 
 
 # =============================================================================
@@ -121,10 +114,9 @@ build GameProject.exe: CXX_EXECUTABLE_LINKER__GameProject_Debug CMakeFiles/GameP
   OBJECT_DIR = CMakeFiles\GameProject.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\GameProject.dir\
   TARGET_FILE = GameProject.exe
   TARGET_IMPLIB = libGameProject.dll.a
-  TARGET_PDB = GameProject.pdb
+  TARGET_PDB = GameProject.exe.dbg
 
 
 #############################################
@@ -150,11 +142,245 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Damien/CLionProjects/ACE/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target ACEEngine
+
+
+#############################################
+# Order-only phony target for ACEEngine
+
+build cmake_object_order_depends_target_ACEEngine: phony || cmake_object_order_depends_target_ACEMemoryManager cmake_object_order_depends_target_AModule
+
+build Engine/CMakeFiles/ACEEngine.dir/Source/ArcadiaCore/Private/UACERenderer.cpp.obj: CXX_COMPILER__ACEEngine_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Private/UACERenderer.cpp || cmake_object_order_depends_target_ACEEngine
+  DEP_FILE = Engine\CMakeFiles\ACEEngine.dir\Source\ArcadiaCore\Private\UACERenderer.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/include
+  OBJECT_DIR = Engine\CMakeFiles\ACEEngine.dir
+  OBJECT_FILE_DIR = Engine\CMakeFiles\ACEEngine.dir\Source\ArcadiaCore\Private
+
+build Engine/CMakeFiles/ACEEngine.dir/Source/ArcadiaCore/Private/UACEEngine.cpp.obj: CXX_COMPILER__ACEEngine_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Private/UACEEngine.cpp || cmake_object_order_depends_target_ACEEngine
+  DEP_FILE = Engine\CMakeFiles\ACEEngine.dir\Source\ArcadiaCore\Private\UACEEngine.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/include
+  OBJECT_DIR = Engine\CMakeFiles\ACEEngine.dir
+  OBJECT_FILE_DIR = Engine\CMakeFiles\ACEEngine.dir\Source\ArcadiaCore\Private
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target ACEEngine
+
+
+#############################################
+# Link the static library Engine\libACEEngine.a
+
+build Engine/libACEEngine.a: CXX_STATIC_LIBRARY_LINKER__ACEEngine_Debug Engine/CMakeFiles/ACEEngine.dir/Source/ArcadiaCore/Private/UACERenderer.cpp.obj Engine/CMakeFiles/ACEEngine.dir/Source/ArcadiaCore/Private/UACEEngine.cpp.obj || Engine/Source/ArcadiaCore/AModule/libAModule.a Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/libACEMemoryManager.a
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = Engine\CMakeFiles\ACEEngine.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Engine\libACEEngine.a
+  TARGET_PDB = ACEEngine.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build Engine/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Damien\CLionProjects\ACE\build-debug\Engine && "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Engine/edit_cache: phony Engine/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Engine/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Damien\CLionProjects\ACE\build-debug\Engine && "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\Damien\CLionProjects\ACE -BC:\Users\Damien\CLionProjects\ACE\build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Engine/rebuild_cache: phony Engine/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Damien/CLionProjects/ACE/Engine/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target AModule
+
+
+#############################################
+# Order-only phony target for AModule
+
+build cmake_object_order_depends_target_AModule: phony || Engine/Source/ArcadiaCore/AModule/CMakeFiles/AModule.dir
+
+build Engine/Source/ArcadiaCore/AModule/CMakeFiles/AModule.dir/Private/JSONParser.cpp.obj: CXX_COMPILER__AModule_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Private/JSONParser.cpp || cmake_object_order_depends_target_AModule
+  DEP_FILE = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir\Private\JSONParser.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public
+  OBJECT_DIR = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir
+  OBJECT_FILE_DIR = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir\Private
+
+build Engine/Source/ArcadiaCore/AModule/CMakeFiles/AModule.dir/Private/ModuleManager.cpp.obj: CXX_COMPILER__AModule_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Private/ModuleManager.cpp || cmake_object_order_depends_target_AModule
+  DEP_FILE = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir\Private\ModuleManager.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public
+  OBJECT_DIR = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir
+  OBJECT_FILE_DIR = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir\Private
+
+build Engine/Source/ArcadiaCore/AModule/CMakeFiles/AModule.dir/Private/INIParser.cpp.obj: CXX_COMPILER__AModule_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Private/INIParser.cpp || cmake_object_order_depends_target_AModule
+  DEP_FILE = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir\Private\INIParser.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public
+  OBJECT_DIR = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir
+  OBJECT_FILE_DIR = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir\Private
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target AModule
+
+
+#############################################
+# Link the static library Engine\Source\ArcadiaCore\AModule\libAModule.a
+
+build Engine/Source/ArcadiaCore/AModule/libAModule.a: CXX_STATIC_LIBRARY_LINKER__AModule_Debug Engine/Source/ArcadiaCore/AModule/CMakeFiles/AModule.dir/Private/JSONParser.cpp.obj Engine/Source/ArcadiaCore/AModule/CMakeFiles/AModule.dir/Private/ModuleManager.cpp.obj Engine/Source/ArcadiaCore/AModule/CMakeFiles/AModule.dir/Private/INIParser.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Engine\Source\ArcadiaCore\AModule\libAModule.a
+  TARGET_PDB = AModule.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build Engine/Source/ArcadiaCore/AModule/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Damien\CLionProjects\ACE\build-debug\Engine\Source\ArcadiaCore\AModule && "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Engine/Source/ArcadiaCore/AModule/edit_cache: phony Engine/Source/ArcadiaCore/AModule/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Engine/Source/ArcadiaCore/AModule/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Damien\CLionProjects\ACE\build-debug\Engine\Source\ArcadiaCore\AModule && "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\Damien\CLionProjects\ACE -BC:\Users\Damien\CLionProjects\ACE\build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Engine/Source/ArcadiaCore/AModule/rebuild_cache: phony Engine/Source/ArcadiaCore/AModule/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Damien/CLionProjects/ACE/Engine/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target ACEMemoryManager
+
+
+#############################################
+# Order-only phony target for ACEMemoryManager
+
+build cmake_object_order_depends_target_ACEMemoryManager: phony || Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/CMakeFiles/ACEMemoryManager.dir
+
+build Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/CMakeFiles/ACEMemoryManager.dir/src/FACEAllocator.cpp.obj: CXX_COMPILER__ACEMemoryManager_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/src/FACEAllocator.cpp || cmake_object_order_depends_target_ACEMemoryManager
+  DEP_FILE = Engine\Source\ArcadiaCore\Modules\ACEMemoryManager\CMakeFiles\ACEMemoryManager.dir\src\FACEAllocator.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/include
+  OBJECT_DIR = Engine\Source\ArcadiaCore\Modules\ACEMemoryManager\CMakeFiles\ACEMemoryManager.dir
+  OBJECT_FILE_DIR = Engine\Source\ArcadiaCore\Modules\ACEMemoryManager\CMakeFiles\ACEMemoryManager.dir\src
+
+build Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/CMakeFiles/ACEMemoryManager.dir/src/FACEFreeListAllocator.cpp.obj: CXX_COMPILER__ACEMemoryManager_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/src/FACEFreeListAllocator.cpp || cmake_object_order_depends_target_ACEMemoryManager
+  DEP_FILE = Engine\Source\ArcadiaCore\Modules\ACEMemoryManager\CMakeFiles\ACEMemoryManager.dir\src\FACEFreeListAllocator.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/include
+  OBJECT_DIR = Engine\Source\ArcadiaCore\Modules\ACEMemoryManager\CMakeFiles\ACEMemoryManager.dir
+  OBJECT_FILE_DIR = Engine\Source\ArcadiaCore\Modules\ACEMemoryManager\CMakeFiles\ACEMemoryManager.dir\src
+
+build Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/CMakeFiles/ACEMemoryManager.dir/src/FACEPoolAllocator.cpp.obj: CXX_COMPILER__ACEMemoryManager_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/src/FACEPoolAllocator.cpp || cmake_object_order_depends_target_ACEMemoryManager
+  DEP_FILE = Engine\Source\ArcadiaCore\Modules\ACEMemoryManager\CMakeFiles\ACEMemoryManager.dir\src\FACEPoolAllocator.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/include
+  OBJECT_DIR = Engine\Source\ArcadiaCore\Modules\ACEMemoryManager\CMakeFiles\ACEMemoryManager.dir
+  OBJECT_FILE_DIR = Engine\Source\ArcadiaCore\Modules\ACEMemoryManager\CMakeFiles\ACEMemoryManager.dir\src
+
+build Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/CMakeFiles/ACEMemoryManager.dir/src/FACEStackAllocator.cpp.obj: CXX_COMPILER__ACEMemoryManager_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/src/FACEStackAllocator.cpp || cmake_object_order_depends_target_ACEMemoryManager
+  DEP_FILE = Engine\Source\ArcadiaCore\Modules\ACEMemoryManager\CMakeFiles\ACEMemoryManager.dir\src\FACEStackAllocator.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/include
+  OBJECT_DIR = Engine\Source\ArcadiaCore\Modules\ACEMemoryManager\CMakeFiles\ACEMemoryManager.dir
+  OBJECT_FILE_DIR = Engine\Source\ArcadiaCore\Modules\ACEMemoryManager\CMakeFiles\ACEMemoryManager.dir\src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target ACEMemoryManager
+
+
+#############################################
+# Link the static library Engine\Source\ArcadiaCore\Modules\ACEMemoryManager\libACEMemoryManager.a
+
+build Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/libACEMemoryManager.a: CXX_STATIC_LIBRARY_LINKER__ACEMemoryManager_Debug Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/CMakeFiles/ACEMemoryManager.dir/src/FACEAllocator.cpp.obj Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/CMakeFiles/ACEMemoryManager.dir/src/FACEFreeListAllocator.cpp.obj Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/CMakeFiles/ACEMemoryManager.dir/src/FACEPoolAllocator.cpp.obj Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/CMakeFiles/ACEMemoryManager.dir/src/FACEStackAllocator.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = Engine\Source\ArcadiaCore\Modules\ACEMemoryManager\CMakeFiles\ACEMemoryManager.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Engine\Source\ArcadiaCore\Modules\ACEMemoryManager\libACEMemoryManager.a
+  TARGET_PDB = ACEMemoryManager.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Damien\CLionProjects\ACE\build-debug\Engine\Source\ArcadiaCore\Modules\ACEMemoryManager && "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/edit_cache: phony Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Damien\CLionProjects\ACE\build-debug\Engine\Source\ArcadiaCore\Modules\ACEMemoryManager && "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\Damien\CLionProjects\ACE -BC:\Users\Damien\CLionProjects\ACE\build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/rebuild_cache: phony Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build ACE: phony libACE.dll
 
+build ACEEngine: phony Engine/libACEEngine.a
+
+build ACEMemoryManager: phony Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/libACEMemoryManager.a
+
+build AModule: phony Engine/Source/ArcadiaCore/AModule/libAModule.a
+
 build GameProject: phony GameProject.exe
+
+build libACEEngine.a: phony Engine/libACEEngine.a
+
+build libACEMemoryManager.a: phony Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/libACEMemoryManager.a
+
+build libAModule.a: phony Engine/Source/ArcadiaCore/AModule/libAModule.a
 
 # =============================================================================
 # Folder targets.
@@ -164,7 +390,28 @@ build GameProject: phony GameProject.exe
 #############################################
 # Folder: C:/Users/Damien/CLionProjects/ACE/build-debug
 
-build all: phony libACE.dll GameProject.exe
+build all: phony libACE.dll GameProject.exe Engine/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Damien/CLionProjects/ACE/build-debug/Engine
+
+build Engine/all: phony Engine/libACEEngine.a Engine/Source/ArcadiaCore/AModule/all Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Damien/CLionProjects/ACE/build-debug/Engine/Source/ArcadiaCore/AModule
+
+build Engine/Source/ArcadiaCore/AModule/all: phony Engine/Source/ArcadiaCore/AModule/libAModule.a
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Damien/CLionProjects/ACE/build-debug/Engine/Source/ArcadiaCore/Modules/ACEMemoryManager
+
+build Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/all: phony Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/libACEMemoryManager.a
 
 # =============================================================================
 # Built-in targets
@@ -173,14 +420,14 @@ build all: phony libACE.dll GameProject.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystem.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Determine-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/Damien/CLionProjects/ACE/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/Damien/CLionProjects/ACE/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Engine/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystem.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Determine-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/Damien/CLionProjects/ACE/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/Damien/CLionProjects/ACE/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Engine/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
 
 
 #############################################
