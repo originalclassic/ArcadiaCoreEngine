@@ -7,6 +7,6 @@
         "include"
     ],
     "SourceFiles": [
-        "src/ACELogger.cpp"
+        "Private/ACELogger.cpp"
     ]
 }
