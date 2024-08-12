@@ -1,7 +1,7 @@
-{
+,{
     "ModuleName": "ACEMemoryManager",
     "Description": "Memory management module for ACE Engine.",
-    "Version": "1.0.0",
+    "Version": "0.1.0",
     "Dependencies": [
         "ACECodeFlow"  // Example dependency, if there are any
     ],

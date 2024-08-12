@@ -16,9 +16,6 @@ set(A_MODULE_SOURCES
         ${SRC_DIR}/INIParser.cpp
 )
 
-# Debugging information
-message(STATUS "A Module Source files: ${A_MODULE_SOURCES}")
-
 # Create the static library
 add_library(AModule STATIC ${A_MODULE_SOURCES})
 
@@ -26,7 +23,3 @@ add_library(AModule STATIC ${A_MODULE_SOURCES})
 target_include_directories(AModule PUBLIC
         ${INCLUDE_DIR}
 )
-
-# Output include directories for debugging
-get_target_property(INCLUDE_DIRS AModule INCLUDE_DIRECTORIES)
-message(STATUS "AModule include directories: ${INCLUDE_DIRS}")

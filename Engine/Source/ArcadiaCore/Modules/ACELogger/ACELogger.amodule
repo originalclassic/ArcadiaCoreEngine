@@ -1,0 +1,12 @@
+{
+    "ModuleName": "ACELogger",
+    "Description": "Logging module for ACE Engine, providing logging functionalities with different levels such as Info, Warning, Error, and Debug.",
+    "Version": "0.1.0",
+    "Dependencies": [],
+    "PublicIncludeDirectories": [
+        "include"
+    ],
+    "SourceFiles": [
+        "src/ACELogger.cpp"
+    ]
+}

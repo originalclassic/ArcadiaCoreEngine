@@ -5,26 +5,23 @@ project(ACEEngine)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Add subdirectories
-add_subdirectory(Source/ArcadiaCore/AModule)
-add_subdirectory(Source/ArcadiaCore/Modules/ACEMemoryManager)
-
-# Define engine source files
+# Define source files for the engine
 set(ENGINE_SOURCES
-        ${CMAKE_CURRENT_SOURCE_DIR}/Source/ArcadiaCore/Private/UACERenderer.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/Source/ArcadiaCore/Private/UACEEngine.cpp
-        # Add other engine source files here
+        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/Private/UACERenderer.cpp
+        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/Private/UACEEngine.cpp
+        # Add all other source files here
 )
 
-# Create the main engine library
+# Create the static library
 add_library(ACEEngine STATIC ${ENGINE_SOURCES})
 
-# Link the ACEMemoryManager and AModule libraries to the engine
-target_link_libraries(ACEEngine PRIVATE ACEMemoryManager AModule)
+# Link against required libraries
+target_link_libraries(ACEEngine PRIVATE ACEMemoryManager AModule ACELogger)  # Add ACELogger here
 
 # Specify include directories for the engine
 target_include_directories(ACEEngine PUBLIC
-        ${CMAKE_CURRENT_SOURCE_DIR}/Source/ArcadiaCore/AModule/Public
-        ${CMAKE_CURRENT_SOURCE_DIR}/Source/ArcadiaCore/Modules/ACEMemoryManager/Public
-        ${CMAKE_CURRENT_SOURCE_DIR}/Source/ArcadiaCore/Public
+        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/Public
+        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/AModule/Public
+        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/include
+        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/Modules/ACELogger/Public  # Add ACELogger include directory
 )

@@ -1,9 +1,0 @@
-# ninja log v6
-4	280	7449927018324199	CMakeFiles/ACE.dir/Engine/Source/ArcadiaCore/Private/UACEEngine.cpp.obj	afacff7db086ee2a
-10	279	7449927018389205	CMakeFiles/ACE.dir/Engine/Source/ArcadiaCore/Private/UACERenderer.cpp.obj	2b393a43053b4f02
-3	131	7449932375984213	libACE.dll	e1ca2030f908fc39
-3	131	7449932375984213	libACE.dll.a	e1ca2030f908fc39
-24	297	7449628777765449	CMakeFiles/GameProject.dir/Game/Source/GameProject/Private/main.cpp.obj	9722275b964226cb
-298	643	7449628780504712	GameProject.exe	206cd070ae5739c8
-3	287	7449994002377813	build.ninja	f0aca6612d6a8ebc
-4	366	7449994002377813	build.ninja	f0aca6612d6a8ebc
