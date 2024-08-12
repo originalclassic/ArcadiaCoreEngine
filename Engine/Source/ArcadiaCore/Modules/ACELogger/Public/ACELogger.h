@@ -1,20 +1,16 @@
 #pragma once
+
 #include <string>
 #include <fstream>
 #include <memory>
-
-enum class LogLevel {
-    Info,
-    Warning,
-    Error,
-    Debug
-};
+#include "LogLevel.h"  // Include the shared LogLevel enum
 
 class ACELogger {
 public:
     static ACELogger& GetInstance();
 
     void Log(const std::string& message, LogLevel level = LogLevel::Info);
+    void LogWithDynamicLevel(const std::string& message, LogLevel dynamicLevel);
     void SetLogFile(const std::string& filename);
     void SetLogLevel(LogLevel level);
 

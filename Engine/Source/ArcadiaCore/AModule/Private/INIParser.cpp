@@ -4,6 +4,12 @@
 #include <iostream>
 #include <algorithm>
 
+/**
+ * @brief Parses an INI file and stores the data in internal structures.
+ *
+ * @param filePath The path to the INI file to be parsed.
+ * @return True if the file was successfully parsed, false otherwise.
+ */
 bool INIParser::parse(const std::string& filePath) {
     std::ifstream file(filePath);
     if (!file.is_open()) {
@@ -47,6 +53,17 @@ bool INIParser::parse(const std::string& filePath) {
     return true;
 }
 
+/**
+ * @brief Get a comma-separated list of values for a given section and key from the parsed INI file.
+ *
+ * This method returns a vector of strings containing the comma-separated values associated with the given
+ * section and key. If the section or key does not exist, an empty vector is returned.
+ *
+ * @param section The section of the INI file.
+ * @param key     The key within the section.
+ *
+ * @return        A vector of strings containing the comma-separated values.
+ */
 std::vector<std::string> INIParser::getCommaSeparatedList(const std::string& section, const std::string& key) const {
     std::vector<std::string> result;
     auto sectionIt = data_.find(section);
@@ -69,4 +86,26 @@ std::vector<std::string> INIParser::getCommaSeparatedList(const std::string& sec
         }
     }
     return result;
+}
+
+/**
+ * @brief Get a string value for a given section and key from the parsed INI file.
+ *
+ * This method returns the string value associated with the given section and key.
+ * If the section or key does not exist, an empty string is returned.
+ *
+ * @param section The section of the INI file.
+ * @param key     The key within the section.
+ *
+ * @return        The string value associated with the key, or an empty string if not found.
+ */
+std::string INIParser::getValue(const std::string& section, const std::string& key) const {
+    auto sectionIt = data_.find(section);
+    if (sectionIt != data_.end()) {
+        auto keyIt = sectionIt->second.find(key);
+        if (keyIt != sectionIt->second.end()) {
+            return keyIt->second;
+        }
+    }
+    return "";
 }

@@ -11,6 +11,7 @@ public:
 
     // Getters for the parsed data
     std::vector<std::string> getCommaSeparatedList(const std::string& section, const std::string& key) const;
+    std::string getValue(const std::string& section, const std::string& key) const;
 
 private:
     std::map<std::string, std::map<std::string, std::string>> data_;

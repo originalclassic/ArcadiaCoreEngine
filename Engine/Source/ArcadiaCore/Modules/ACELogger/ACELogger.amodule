@@ -4,7 +4,7 @@
     "Version": "0.1.0",
     "Dependencies": [],
     "PublicIncludeDirectories": [
-        "include"
+        "Public"
     ],
     "SourceFiles": [
         "Private/ACELogger.cpp"

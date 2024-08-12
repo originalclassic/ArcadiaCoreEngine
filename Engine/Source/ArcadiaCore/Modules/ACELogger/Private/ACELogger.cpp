@@ -54,3 +54,7 @@ void ACELogger::Log(const std::string& message, LogLevel level) {
     // Also print to the console
     std::cout << logEntry << std::endl;
 }
+
+void ACELogger::LogWithDynamicLevel(const std::string& message, LogLevel dynamicLevel) {
+    Log(message, dynamicLevel);
+}

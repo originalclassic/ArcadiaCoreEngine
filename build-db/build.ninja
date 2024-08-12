@@ -53,7 +53,7 @@ build CMakeFiles/ACE.dir/Engine/Source/ArcadiaCore/Private/UACERenderer.cpp.obj:
   DEFINES = -DACE_EXPORTS
   DEP_FILE = CMakeFiles\ACE.dir\Engine\Source\ArcadiaCore\Private\UACERenderer.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEInput/Public
+  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEInput/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Config
   OBJECT_DIR = CMakeFiles\ACE.dir
   OBJECT_FILE_DIR = CMakeFiles\ACE.dir\Engine\Source\ArcadiaCore\Private
 
@@ -61,7 +61,15 @@ build CMakeFiles/ACE.dir/Engine/Source/ArcadiaCore/Private/UACEEngine.cpp.obj: C
   DEFINES = -DACE_EXPORTS
   DEP_FILE = CMakeFiles\ACE.dir\Engine\Source\ArcadiaCore\Private\UACEEngine.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEInput/Public
+  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEInput/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Config
+  OBJECT_DIR = CMakeFiles\ACE.dir
+  OBJECT_FILE_DIR = CMakeFiles\ACE.dir\Engine\Source\ArcadiaCore\Private
+
+build CMakeFiles/ACE.dir/Engine/Source/ArcadiaCore/Private/EngineConfig.cpp.obj: CXX_COMPILER__ACE_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Private/EngineConfig.cpp || cmake_object_order_depends_target_ACE
+  DEFINES = -DACE_EXPORTS
+  DEP_FILE = CMakeFiles\ACE.dir\Engine\Source\ArcadiaCore\Private\EngineConfig.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEInput/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Config
   OBJECT_DIR = CMakeFiles\ACE.dir
   OBJECT_FILE_DIR = CMakeFiles\ACE.dir\Engine\Source\ArcadiaCore\Private
 
@@ -73,7 +81,7 @@ build CMakeFiles/ACE.dir/Engine/Source/ArcadiaCore/Private/UACEEngine.cpp.obj: C
 #############################################
 # Link the shared library libACE.dll
 
-build libACE.dll libACE.dll.a: CXX_SHARED_LIBRARY_LINKER__ACE_Debug CMakeFiles/ACE.dir/Engine/Source/ArcadiaCore/Private/UACERenderer.cpp.obj CMakeFiles/ACE.dir/Engine/Source/ArcadiaCore/Private/UACEEngine.cpp.obj | Engine/Source/ArcadiaCore/AModule/libAModule.a Engine/Source/ArcadiaCore/Modules/ACELogger/libACELogger.a || Engine/Source/ArcadiaCore/AModule/libAModule.a Engine/Source/ArcadiaCore/Modules/ACELogger/libACELogger.a
+build libACE.dll libACE.dll.a: CXX_SHARED_LIBRARY_LINKER__ACE_Debug CMakeFiles/ACE.dir/Engine/Source/ArcadiaCore/Private/UACERenderer.cpp.obj CMakeFiles/ACE.dir/Engine/Source/ArcadiaCore/Private/UACEEngine.cpp.obj CMakeFiles/ACE.dir/Engine/Source/ArcadiaCore/Private/EngineConfig.cpp.obj | Engine/Source/ArcadiaCore/AModule/libAModule.a Engine/Source/ArcadiaCore/Modules/ACELogger/libACELogger.a || Engine/Source/ArcadiaCore/AModule/libAModule.a Engine/Source/ArcadiaCore/Modules/ACELogger/libACELogger.a
   LANGUAGE_COMPILE_FLAGS = -g
   LINK_LIBRARIES = Engine/Source/ArcadiaCore/AModule/libAModule.a  Engine/Source/ArcadiaCore/Modules/ACELogger/libACELogger.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ACE.dir

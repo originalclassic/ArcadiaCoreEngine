@@ -2,20 +2,21 @@
 #include "JSONParser.h"
 #include <iostream>
 
+#include "../../Modules/ACELogger/Public/ACELogger.h"
+
 void ModuleManager::LoadModule(const std::string& modulePath) {
     JSONParser parser;
     if (!parser.parse(modulePath)) {
-        std::cerr << "Failed to parse module file: " << modulePath << std::endl;
+        ACELogger::GetInstance().Log("Failed to parse module file: " + modulePath, LogLevel::Error);
         return;
     }
-
     std::string moduleName = parser.getString("name");
     std::string description = parser.getString("description");
     std::string version = parser.getString("version");
 
-    std::cout << "Loading module: " << moduleName << std::endl;
-    std::cout << "Description: " << description << std::endl;
-    std::cout << "Version: " << version << std::endl;
+    ACELogger::GetInstance().Log("Loading module: " + moduleName, LogLevel::Info);
+    ACELogger::GetInstance().Log("Description: " + description, LogLevel::Info);
+    ACELogger::GetInstance().Log("Version: " + version, LogLevel::Info);
 
     // Load public include directories
     auto includeDirs = parser.getArray("include_directories");
@@ -38,10 +39,10 @@ void ModuleManager::LoadModule(const std::string& modulePath) {
 
 void ModuleManager::AddIncludeDirectory(const std::string& dir) {
     // Implementation to add include directory
-    std::cout << "Adding include directory: " << dir << std::endl;
+    ACELogger::GetInstance().Log("Adding include directory: " + dir, LogLevel::Debug);
 }
 
 void ModuleManager::AddSourceFile(const std::string& file) {
     // Implementation to add source file
-    std::cout << "Adding source file: " << file << std::endl;
+    ACELogger::GetInstance().Log("Adding source file: " + file, LogLevel::Debug);
 }
