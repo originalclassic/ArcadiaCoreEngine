@@ -33,13 +33,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 19,
+				"line" : 31,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 22,
+				"line" : 19,
 				"parent" : 0
 			}
 		]
@@ -58,6 +58,22 @@
 				{
 					"backtrace" : 3,
 					"path" : "C:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public/Platform"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public/Math"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public/Memory"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public/Logging"
 				},
 				{
 					"backtrace" : 3,

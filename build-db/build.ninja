@@ -132,14 +132,14 @@ build cmake_object_order_depends_target_ACEEngine: phony || cmake_object_order_d
 build Engine/CMakeFiles/ACEEngine.dir/Source/ArcadiaCore/Private/UACERenderer.cpp.obj: CXX_COMPILER__ACEEngine_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Private/UACERenderer.cpp || cmake_object_order_depends_target_ACEEngine
   DEP_FILE = Engine\CMakeFiles\ACEEngine.dir\Source\ArcadiaCore\Private\UACERenderer.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/include -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/Public
+  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public/Platform -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public/Math -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public/Memory -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public/Logging -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/include -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/Public
   OBJECT_DIR = Engine\CMakeFiles\ACEEngine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\ACEEngine.dir\Source\ArcadiaCore\Private
 
 build Engine/CMakeFiles/ACEEngine.dir/Source/ArcadiaCore/Private/UACEEngine.cpp.obj: CXX_COMPILER__ACEEngine_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Private/UACEEngine.cpp || cmake_object_order_depends_target_ACEEngine
   DEP_FILE = Engine\CMakeFiles\ACEEngine.dir\Source\ArcadiaCore\Private\UACEEngine.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/include -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/Public
+  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public/Platform -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public/Math -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public/Memory -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public/Logging -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/include -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/Public
   OBJECT_DIR = Engine\CMakeFiles\ACEEngine.dir
   OBJECT_FILE_DIR = Engine\CMakeFiles\ACEEngine.dir\Source\ArcadiaCore\Private
 

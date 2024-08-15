@@ -6,11 +6,11 @@ UACEEngine::UACEEngine()
     : ACE_bIsRunning(false) {
     // Access the EngineConfig singleton
     EngineConfig& engineConfig = EngineConfig::GetInstance();
-    engineConfig.LoadConfig("path/to/config.ini");
+    engineConfig.LoadConfig("Engine/Config/Engine.ini");
 
     // Log the initialization of the engine
     ACELogger::GetInstance().SetLogLevel(engineConfig.GetLogLevel());
-    ACELogger::GetInstance().LogWithDynamicLevel("UACEEngine initialized", engineConfig.GetLogLevel());
+    ACELogger::GetInstance().LogWithDynamicLevel("UACEEngine initialized TEST", engineConfig.GetLogLevel());
 }
 
 UACEEngine::~UACEEngine() {

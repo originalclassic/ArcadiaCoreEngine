@@ -1,6 +1,7 @@
 #pragma once
 
-#include "LogLevel.h"  // Include the shared LogLevel enum
+
+#include "../Modules/ACELogger/Public/LogLevel.h"
 #include <string>
 
 class EngineConfig {

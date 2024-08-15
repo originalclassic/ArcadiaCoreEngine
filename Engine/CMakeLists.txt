@@ -15,13 +15,22 @@ set(ENGINE_SOURCES
 # Create the static library
 add_library(ACEEngine STATIC ${ENGINE_SOURCES})
 
-# Link against required libraries
-target_link_libraries(ACEEngine PRIVATE ACEMemoryManager AModule ACELogger)  # Add ACELogger here
-
 # Specify include directories for the engine
 target_include_directories(ACEEngine PUBLIC
-        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/Public
-        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/AModule/Public
-        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/include
-        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/Modules/ACELogger/Public  # Add ACELogger include directory
+        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/Public           # Core and other public headers
+        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/Public/Platform  # Platform-specific headers
+        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/Public/Math      # Math headers
+        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/Public/Memory    # Memory management headers
+        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/Public/Logging   # Logging headers
+        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/AModule/Public   # AModule headers
+        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/include # ACEMemoryManager headers
+        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/Modules/ACELogger/Public        # ACELogger headers
+)
+
+# Link against required libraries
+target_link_libraries(ACEEngine PRIVATE
+        ACEMemoryManager
+        AModule
+        ACELogger
+        # Add any additional libraries needed here
 )
