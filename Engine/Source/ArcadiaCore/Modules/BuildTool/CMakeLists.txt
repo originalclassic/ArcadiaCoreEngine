@@ -3,15 +3,16 @@ project(BuildTool)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# Include directories
-include_directories(include)
-
-# Add source files
-set(SOURCES
+# Add the source files specific to BuildTool
+add_executable(BuildTool
         Private/BuildTool.cpp
         Private/BuildFileParser.cpp
-        main.cpp
 )
 
-# Create the executable
-add_executable(BuildTool ${SOURCES})
+# Include directories (e.g., include ACELogger headers)
+target_include_directories(BuildTool PRIVATE
+        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/Modules/ACELogger/Public
+)
+
+# Link against the ACELogger library
+target_link_libraries(BuildTool PRIVATE ACELogger)

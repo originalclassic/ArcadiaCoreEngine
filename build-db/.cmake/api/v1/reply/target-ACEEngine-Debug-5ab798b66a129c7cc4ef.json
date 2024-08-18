@@ -108,11 +108,11 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "AModule::@b7324a611fdd00e0c7aa"
+			"id" : "ACELogger::@4179358c4bf7de218322"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "ACELogger::@4179358c4bf7de218322"
+			"id" : "AModule::@b7324a611fdd00e0c7aa"
 		}
 	],
 	"id" : "ACEEngine::@8f69bdd092c897d92c1e",

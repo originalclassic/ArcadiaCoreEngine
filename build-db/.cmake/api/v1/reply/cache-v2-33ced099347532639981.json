@@ -182,6 +182,42 @@
 			"value" : "C:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule"
 		},
 		{
+			"name" : "BuildTool_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/Damien/CLionProjects/ACE/build-db/Engine/Source/ArcadiaCore/Modules/BuildTool"
+		},
+		{
+			"name" : "BuildTool_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "BuildTool_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/BuildTool"
+		},
+		{
 			"name" : "CMAKE_ADDR2LINE",
 			"properties" : 
 			[
@@ -975,7 +1011,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "6"
+			"value" : "7"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",

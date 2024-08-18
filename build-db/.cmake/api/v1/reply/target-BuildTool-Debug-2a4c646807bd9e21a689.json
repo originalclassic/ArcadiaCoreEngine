@@ -2,13 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "libACE.dll"
+			"path" : "Engine/Source/ArcadiaCore/Modules/BuildTool/BuildTool.exe"
 		},
 		{
-			"path" : "libACE.dll.a"
-		},
-		{
-			"path" : "libACE.pdb"
+			"path" : "Engine/Source/ArcadiaCore/Modules/BuildTool/BuildTool.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -16,13 +13,13 @@
 	{
 		"commands" : 
 		[
-			"add_library",
+			"add_executable",
 			"target_link_libraries",
-			"include_directories"
+			"target_include_directories"
 		],
 		"files" : 
 		[
-			"CMakeLists.txt"
+			"Engine/Source/ArcadiaCore/Modules/BuildTool/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -32,19 +29,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 32,
+				"line" : 7,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 35,
+				"line" : 18,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 16,
+				"line" : 13,
 				"parent" : 0
 			}
 		]
@@ -58,33 +55,11 @@
 					"fragment" : "-g -std=gnu++17 -fdiagnostics-color=always"
 				}
 			],
-			"defines" : 
-			[
-				{
-					"define" : "ACE_EXPORTS"
-				}
-			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public"
-				},
-				{
-					"backtrace" : 3,
-					"path" : "C:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public"
-				},
-				{
-					"backtrace" : 3,
 					"path" : "C:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/Public"
-				},
-				{
-					"backtrace" : 3,
-					"path" : "C:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEInput/Public"
-				},
-				{
-					"backtrace" : 3,
-					"path" : "C:/Users/Damien/CLionProjects/ACE/Engine/Config"
 				}
 			],
 			"language" : "CXX",
@@ -99,8 +74,7 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1,
-				2
+				1
 			]
 		}
 	],
@@ -108,26 +82,21 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "AModule::@b7324a611fdd00e0c7aa"
-		},
-		{
-			"backtrace" : 2,
 			"id" : "ACELogger::@4179358c4bf7de218322"
 		}
 	],
-	"id" : "ACE::@6890427a1f51a3e7e1df",
+	"id" : "BuildTool::@7e941d4628d2132b6b04",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "",
+				"fragment" : "-g",
 				"role" : "flags"
 			},
 			{
-				"backtrace" : 2,
-				"fragment" : "Engine\\Source\\ArcadiaCore\\AModule\\libAModule.a",
-				"role" : "libraries"
+				"fragment" : "",
+				"role" : "flags"
 			},
 			{
 				"backtrace" : 2,
@@ -141,12 +110,12 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "ACE",
-	"nameOnDisk" : "libACE.dll",
+	"name" : "BuildTool",
+	"nameOnDisk" : "BuildTool.exe",
 	"paths" : 
 	{
-		"build" : ".",
-		"source" : "."
+		"build" : "Engine/Source/ArcadiaCore/Modules/BuildTool",
+		"source" : "Engine/Source/ArcadiaCore/Modules/BuildTool"
 	},
 	"sourceGroups" : 
 	[
@@ -155,8 +124,7 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1,
-				2
+				1
 			]
 		}
 	],
@@ -165,21 +133,15 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Engine/Source/ArcadiaCore/Private/UACERenderer.cpp",
+			"path" : "Engine/Source/ArcadiaCore/Modules/BuildTool/Private/BuildTool.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Engine/Source/ArcadiaCore/Private/UACEEngine.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Engine/Source/ArcadiaCore/Private/EngineConfig.cpp",
+			"path" : "Engine/Source/ArcadiaCore/Modules/BuildTool/Private/BuildFileParser.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
-	"type" : "SHARED_LIBRARY"
+	"type" : "EXECUTABLE"
 }

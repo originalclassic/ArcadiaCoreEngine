@@ -4,5 +4,5 @@
 
 class BuildFileParser {
 public:
-    void Parse(const std::string& filePath);
+    bool Parse(const std::string& filePath);
 };

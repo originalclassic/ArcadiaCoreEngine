@@ -53,7 +53,7 @@ build CMakeFiles/ACE.dir/Engine/Source/ArcadiaCore/Private/UACERenderer.cpp.obj:
   DEFINES = -DACE_EXPORTS
   DEP_FILE = CMakeFiles\ACE.dir\Engine\Source\ArcadiaCore\Private\UACERenderer.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEInput/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Config
+  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEInput/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/BuildTool/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Config
   OBJECT_DIR = CMakeFiles\ACE.dir
   OBJECT_FILE_DIR = CMakeFiles\ACE.dir\Engine\Source\ArcadiaCore\Private
 
@@ -61,7 +61,7 @@ build CMakeFiles/ACE.dir/Engine/Source/ArcadiaCore/Private/UACEEngine.cpp.obj: C
   DEFINES = -DACE_EXPORTS
   DEP_FILE = CMakeFiles\ACE.dir\Engine\Source\ArcadiaCore\Private\UACEEngine.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEInput/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Config
+  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEInput/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/BuildTool/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Config
   OBJECT_DIR = CMakeFiles\ACE.dir
   OBJECT_FILE_DIR = CMakeFiles\ACE.dir\Engine\Source\ArcadiaCore\Private
 
@@ -69,7 +69,7 @@ build CMakeFiles/ACE.dir/Engine/Source/ArcadiaCore/Private/EngineConfig.cpp.obj:
   DEFINES = -DACE_EXPORTS
   DEP_FILE = CMakeFiles\ACE.dir\Engine\Source\ArcadiaCore\Private\EngineConfig.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEInput/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Config
+  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEInput/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/BuildTool/Public -IC:/Users/Damien/CLionProjects/ACE/Engine/Config
   OBJECT_DIR = CMakeFiles\ACE.dir
   OBJECT_FILE_DIR = CMakeFiles\ACE.dir\Engine\Source\ArcadiaCore\Private
 
@@ -114,6 +114,269 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   restat = 1
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Damien/CLionProjects/ACE/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target ACELogger
+
+
+#############################################
+# Order-only phony target for ACELogger
+
+build cmake_object_order_depends_target_ACELogger: phony || Engine/Source/ArcadiaCore/Modules/ACELogger/CMakeFiles/ACELogger.dir
+
+build Engine/Source/ArcadiaCore/Modules/ACELogger/CMakeFiles/ACELogger.dir/Private/ACELogger.cpp.obj: CXX_COMPILER__ACELogger_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/Private/ACELogger.cpp || cmake_object_order_depends_target_ACELogger
+  DEP_FILE = Engine\Source\ArcadiaCore\Modules\ACELogger\CMakeFiles\ACELogger.dir\Private\ACELogger.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/Public
+  OBJECT_DIR = Engine\Source\ArcadiaCore\Modules\ACELogger\CMakeFiles\ACELogger.dir
+  OBJECT_FILE_DIR = Engine\Source\ArcadiaCore\Modules\ACELogger\CMakeFiles\ACELogger.dir\Private
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target ACELogger
+
+
+#############################################
+# Link the static library Engine\Source\ArcadiaCore\Modules\ACELogger\libACELogger.a
+
+build Engine/Source/ArcadiaCore/Modules/ACELogger/libACELogger.a: CXX_STATIC_LIBRARY_LINKER__ACELogger_Debug Engine/Source/ArcadiaCore/Modules/ACELogger/CMakeFiles/ACELogger.dir/Private/ACELogger.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = Engine\Source\ArcadiaCore\Modules\ACELogger\CMakeFiles\ACELogger.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Engine\Source\ArcadiaCore\Modules\ACELogger\libACELogger.a
+  TARGET_PDB = ACELogger.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build Engine/Source/ArcadiaCore/Modules/ACELogger/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Damien\CLionProjects\ACE\build-db\Engine\Source\ArcadiaCore\Modules\ACELogger && "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Engine/Source/ArcadiaCore/Modules/ACELogger/edit_cache: phony Engine/Source/ArcadiaCore/Modules/ACELogger/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Engine/Source/ArcadiaCore/Modules/ACELogger/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Damien\CLionProjects\ACE\build-db\Engine\Source\ArcadiaCore\Modules\ACELogger && "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\Damien\CLionProjects\ACE -BC:\Users\Damien\CLionProjects\ACE\build-db"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Engine/Source/ArcadiaCore/Modules/ACELogger/rebuild_cache: phony Engine/Source/ArcadiaCore/Modules/ACELogger/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Damien/CLionProjects/ACE/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target AModule
+
+
+#############################################
+# Order-only phony target for AModule
+
+build cmake_object_order_depends_target_AModule: phony || Engine/Source/ArcadiaCore/AModule/CMakeFiles/AModule.dir
+
+build Engine/Source/ArcadiaCore/AModule/CMakeFiles/AModule.dir/Private/JSONParser.cpp.obj: CXX_COMPILER__AModule_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Private/JSONParser.cpp || cmake_object_order_depends_target_AModule
+  DEP_FILE = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir\Private\JSONParser.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public
+  OBJECT_DIR = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir
+  OBJECT_FILE_DIR = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir\Private
+
+build Engine/Source/ArcadiaCore/AModule/CMakeFiles/AModule.dir/Private/ModuleManager.cpp.obj: CXX_COMPILER__AModule_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Private/ModuleManager.cpp || cmake_object_order_depends_target_AModule
+  DEP_FILE = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir\Private\ModuleManager.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public
+  OBJECT_DIR = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir
+  OBJECT_FILE_DIR = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir\Private
+
+build Engine/Source/ArcadiaCore/AModule/CMakeFiles/AModule.dir/Private/INIParser.cpp.obj: CXX_COMPILER__AModule_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Private/INIParser.cpp || cmake_object_order_depends_target_AModule
+  DEP_FILE = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir\Private\INIParser.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public
+  OBJECT_DIR = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir
+  OBJECT_FILE_DIR = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir\Private
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target AModule
+
+
+#############################################
+# Link the static library Engine\Source\ArcadiaCore\AModule\libAModule.a
+
+build Engine/Source/ArcadiaCore/AModule/libAModule.a: CXX_STATIC_LIBRARY_LINKER__AModule_Debug Engine/Source/ArcadiaCore/AModule/CMakeFiles/AModule.dir/Private/JSONParser.cpp.obj Engine/Source/ArcadiaCore/AModule/CMakeFiles/AModule.dir/Private/ModuleManager.cpp.obj Engine/Source/ArcadiaCore/AModule/CMakeFiles/AModule.dir/Private/INIParser.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Engine\Source\ArcadiaCore\AModule\libAModule.a
+  TARGET_PDB = AModule.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build Engine/Source/ArcadiaCore/AModule/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Damien\CLionProjects\ACE\build-db\Engine\Source\ArcadiaCore\AModule && "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Engine/Source/ArcadiaCore/AModule/edit_cache: phony Engine/Source/ArcadiaCore/AModule/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Engine/Source/ArcadiaCore/AModule/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Damien\CLionProjects\ACE\build-db\Engine\Source\ArcadiaCore\AModule && "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\Damien\CLionProjects\ACE -BC:\Users\Damien\CLionProjects\ACE\build-db"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Engine/Source/ArcadiaCore/AModule/rebuild_cache: phony Engine/Source/ArcadiaCore/AModule/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Damien/CLionProjects/ACE/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target ACEInput
+
+
+#############################################
+# Order-only phony target for ACEInput
+
+build cmake_object_order_depends_target_ACEInput: phony || Engine/Source/ArcadiaCore/Modules/ACEInput/CMakeFiles/ACEInput.dir
+
+build Engine/Source/ArcadiaCore/Modules/ACEInput/CMakeFiles/ACEInput.dir/Private/InputHandler.cpp.obj: CXX_COMPILER__ACEInput_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEInput/Private/InputHandler.cpp || cmake_object_order_depends_target_ACEInput
+  DEP_FILE = Engine\Source\ArcadiaCore\Modules\ACEInput\CMakeFiles\ACEInput.dir\Private\InputHandler.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEInput/Public
+  OBJECT_DIR = Engine\Source\ArcadiaCore\Modules\ACEInput\CMakeFiles\ACEInput.dir
+  OBJECT_FILE_DIR = Engine\Source\ArcadiaCore\Modules\ACEInput\CMakeFiles\ACEInput.dir\Private
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target ACEInput
+
+
+#############################################
+# Link the static library Engine\Source\ArcadiaCore\Modules\ACEInput\libACEInput.a
+
+build Engine/Source/ArcadiaCore/Modules/ACEInput/libACEInput.a: CXX_STATIC_LIBRARY_LINKER__ACEInput_Debug Engine/Source/ArcadiaCore/Modules/ACEInput/CMakeFiles/ACEInput.dir/Private/InputHandler.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = Engine\Source\ArcadiaCore\Modules\ACEInput\CMakeFiles\ACEInput.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Engine\Source\ArcadiaCore\Modules\ACEInput\libACEInput.a
+  TARGET_PDB = ACEInput.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build Engine/Source/ArcadiaCore/Modules/ACEInput/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Damien\CLionProjects\ACE\build-db\Engine\Source\ArcadiaCore\Modules\ACEInput && "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Engine/Source/ArcadiaCore/Modules/ACEInput/edit_cache: phony Engine/Source/ArcadiaCore/Modules/ACEInput/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Engine/Source/ArcadiaCore/Modules/ACEInput/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Damien\CLionProjects\ACE\build-db\Engine\Source\ArcadiaCore\Modules\ACEInput && "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\Damien\CLionProjects\ACE -BC:\Users\Damien\CLionProjects\ACE\build-db"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Engine/Source/ArcadiaCore/Modules/ACEInput/rebuild_cache: phony Engine/Source/ArcadiaCore/Modules/ACEInput/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Damien/CLionProjects/ACE/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target BuildTool
+
+
+#############################################
+# Order-only phony target for BuildTool
+
+build cmake_object_order_depends_target_BuildTool: phony || cmake_object_order_depends_target_ACELogger
+
+build Engine/Source/ArcadiaCore/Modules/BuildTool/CMakeFiles/BuildTool.dir/Private/BuildTool.cpp.obj: CXX_COMPILER__BuildTool_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/BuildTool/Private/BuildTool.cpp || cmake_object_order_depends_target_BuildTool
+  DEP_FILE = Engine\Source\ArcadiaCore\Modules\BuildTool\CMakeFiles\BuildTool.dir\Private\BuildTool.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/Public
+  OBJECT_DIR = Engine\Source\ArcadiaCore\Modules\BuildTool\CMakeFiles\BuildTool.dir
+  OBJECT_FILE_DIR = Engine\Source\ArcadiaCore\Modules\BuildTool\CMakeFiles\BuildTool.dir\Private
+
+build Engine/Source/ArcadiaCore/Modules/BuildTool/CMakeFiles/BuildTool.dir/Private/BuildFileParser.cpp.obj: CXX_COMPILER__BuildTool_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/BuildTool/Private/BuildFileParser.cpp || cmake_object_order_depends_target_BuildTool
+  DEP_FILE = Engine\Source\ArcadiaCore\Modules\BuildTool\CMakeFiles\BuildTool.dir\Private\BuildFileParser.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/Public
+  OBJECT_DIR = Engine\Source\ArcadiaCore\Modules\BuildTool\CMakeFiles\BuildTool.dir
+  OBJECT_FILE_DIR = Engine\Source\ArcadiaCore\Modules\BuildTool\CMakeFiles\BuildTool.dir\Private
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target BuildTool
+
+
+#############################################
+# Link the executable Engine\Source\ArcadiaCore\Modules\BuildTool\BuildTool.exe
+
+build Engine/Source/ArcadiaCore/Modules/BuildTool/BuildTool.exe: CXX_EXECUTABLE_LINKER__BuildTool_Debug Engine/Source/ArcadiaCore/Modules/BuildTool/CMakeFiles/BuildTool.dir/Private/BuildTool.cpp.obj Engine/Source/ArcadiaCore/Modules/BuildTool/CMakeFiles/BuildTool.dir/Private/BuildFileParser.cpp.obj | Engine/Source/ArcadiaCore/Modules/ACELogger/libACELogger.a || Engine/Source/ArcadiaCore/Modules/ACELogger/libACELogger.a
+  FLAGS = -g
+  LINK_LIBRARIES = Engine/Source/ArcadiaCore/Modules/ACELogger/libACELogger.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = Engine\Source\ArcadiaCore\Modules\BuildTool\CMakeFiles\BuildTool.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Engine\Source\ArcadiaCore\Modules\BuildTool\BuildTool.exe
+  TARGET_IMPLIB = Engine\Source\ArcadiaCore\Modules\BuildTool\libBuildTool.dll.a
+  TARGET_PDB = BuildTool.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build Engine/Source/ArcadiaCore/Modules/BuildTool/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Damien\CLionProjects\ACE\build-db\Engine\Source\ArcadiaCore\Modules\BuildTool && "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Engine/Source/ArcadiaCore/Modules/BuildTool/edit_cache: phony Engine/Source/ArcadiaCore/Modules/BuildTool/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Engine/Source/ArcadiaCore/Modules/BuildTool/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Damien\CLionProjects\ACE\build-db\Engine\Source\ArcadiaCore\Modules\BuildTool && "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\Damien\CLionProjects\ACE -BC:\Users\Damien\CLionProjects\ACE\build-db"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Engine/Source/ArcadiaCore/Modules/BuildTool/rebuild_cache: phony Engine/Source/ArcadiaCore/Modules/BuildTool/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -245,200 +508,6 @@ build Game/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build Game/rebuild_cache: phony Game/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
-# Write statements declared in CMakeLists.txt:
-# C:/Users/Damien/CLionProjects/ACE/CMakeLists.txt
-# =============================================================================
-
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target AModule
-
-
-#############################################
-# Order-only phony target for AModule
-
-build cmake_object_order_depends_target_AModule: phony || Engine/Source/ArcadiaCore/AModule/CMakeFiles/AModule.dir
-
-build Engine/Source/ArcadiaCore/AModule/CMakeFiles/AModule.dir/Private/JSONParser.cpp.obj: CXX_COMPILER__AModule_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Private/JSONParser.cpp || cmake_object_order_depends_target_AModule
-  DEP_FILE = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir\Private\JSONParser.cpp.obj.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public
-  OBJECT_DIR = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir
-  OBJECT_FILE_DIR = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir\Private
-
-build Engine/Source/ArcadiaCore/AModule/CMakeFiles/AModule.dir/Private/ModuleManager.cpp.obj: CXX_COMPILER__AModule_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Private/ModuleManager.cpp || cmake_object_order_depends_target_AModule
-  DEP_FILE = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir\Private\ModuleManager.cpp.obj.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public
-  OBJECT_DIR = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir
-  OBJECT_FILE_DIR = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir\Private
-
-build Engine/Source/ArcadiaCore/AModule/CMakeFiles/AModule.dir/Private/INIParser.cpp.obj: CXX_COMPILER__AModule_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Private/INIParser.cpp || cmake_object_order_depends_target_AModule
-  DEP_FILE = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir\Private\INIParser.cpp.obj.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/Public
-  OBJECT_DIR = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir
-  OBJECT_FILE_DIR = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir\Private
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target AModule
-
-
-#############################################
-# Link the static library Engine\Source\ArcadiaCore\AModule\libAModule.a
-
-build Engine/Source/ArcadiaCore/AModule/libAModule.a: CXX_STATIC_LIBRARY_LINKER__AModule_Debug Engine/Source/ArcadiaCore/AModule/CMakeFiles/AModule.dir/Private/JSONParser.cpp.obj Engine/Source/ArcadiaCore/AModule/CMakeFiles/AModule.dir/Private/ModuleManager.cpp.obj Engine/Source/ArcadiaCore/AModule/CMakeFiles/AModule.dir/Private/INIParser.cpp.obj
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = Engine\Source\ArcadiaCore\AModule\CMakeFiles\AModule.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Engine\Source\ArcadiaCore\AModule\libAModule.a
-  TARGET_PDB = AModule.a.dbg
-
-
-#############################################
-# Utility command for edit_cache
-
-build Engine/Source/ArcadiaCore/AModule/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Damien\CLionProjects\ACE\build-db\Engine\Source\ArcadiaCore\AModule && "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build Engine/Source/ArcadiaCore/AModule/edit_cache: phony Engine/Source/ArcadiaCore/AModule/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build Engine/Source/ArcadiaCore/AModule/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Damien\CLionProjects\ACE\build-db\Engine\Source\ArcadiaCore\AModule && "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\Damien\CLionProjects\ACE -BC:\Users\Damien\CLionProjects\ACE\build-db"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build Engine/Source/ArcadiaCore/AModule/rebuild_cache: phony Engine/Source/ArcadiaCore/AModule/CMakeFiles/rebuild_cache.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# C:/Users/Damien/CLionProjects/ACE/CMakeLists.txt
-# =============================================================================
-
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target ACELogger
-
-
-#############################################
-# Order-only phony target for ACELogger
-
-build cmake_object_order_depends_target_ACELogger: phony || Engine/Source/ArcadiaCore/Modules/ACELogger/CMakeFiles/ACELogger.dir
-
-build Engine/Source/ArcadiaCore/Modules/ACELogger/CMakeFiles/ACELogger.dir/Private/ACELogger.cpp.obj: CXX_COMPILER__ACELogger_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/Private/ACELogger.cpp || cmake_object_order_depends_target_ACELogger
-  DEP_FILE = Engine\Source\ArcadiaCore\Modules\ACELogger\CMakeFiles\ACELogger.dir\Private\ACELogger.cpp.obj.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/Public
-  OBJECT_DIR = Engine\Source\ArcadiaCore\Modules\ACELogger\CMakeFiles\ACELogger.dir
-  OBJECT_FILE_DIR = Engine\Source\ArcadiaCore\Modules\ACELogger\CMakeFiles\ACELogger.dir\Private
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target ACELogger
-
-
-#############################################
-# Link the static library Engine\Source\ArcadiaCore\Modules\ACELogger\libACELogger.a
-
-build Engine/Source/ArcadiaCore/Modules/ACELogger/libACELogger.a: CXX_STATIC_LIBRARY_LINKER__ACELogger_Debug Engine/Source/ArcadiaCore/Modules/ACELogger/CMakeFiles/ACELogger.dir/Private/ACELogger.cpp.obj
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = Engine\Source\ArcadiaCore\Modules\ACELogger\CMakeFiles\ACELogger.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Engine\Source\ArcadiaCore\Modules\ACELogger\libACELogger.a
-  TARGET_PDB = ACELogger.a.dbg
-
-
-#############################################
-# Utility command for edit_cache
-
-build Engine/Source/ArcadiaCore/Modules/ACELogger/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Damien\CLionProjects\ACE\build-db\Engine\Source\ArcadiaCore\Modules\ACELogger && "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build Engine/Source/ArcadiaCore/Modules/ACELogger/edit_cache: phony Engine/Source/ArcadiaCore/Modules/ACELogger/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build Engine/Source/ArcadiaCore/Modules/ACELogger/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Damien\CLionProjects\ACE\build-db\Engine\Source\ArcadiaCore\Modules\ACELogger && "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\Damien\CLionProjects\ACE -BC:\Users\Damien\CLionProjects\ACE\build-db"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build Engine/Source/ArcadiaCore/Modules/ACELogger/rebuild_cache: phony Engine/Source/ArcadiaCore/Modules/ACELogger/CMakeFiles/rebuild_cache.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# C:/Users/Damien/CLionProjects/ACE/CMakeLists.txt
-# =============================================================================
-
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target ACEInput
-
-
-#############################################
-# Order-only phony target for ACEInput
-
-build cmake_object_order_depends_target_ACEInput: phony || Engine/Source/ArcadiaCore/Modules/ACEInput/CMakeFiles/ACEInput.dir
-
-build Engine/Source/ArcadiaCore/Modules/ACEInput/CMakeFiles/ACEInput.dir/Private/InputHandler.cpp.obj: CXX_COMPILER__ACEInput_unscanned_Debug C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEInput/Private/InputHandler.cpp || cmake_object_order_depends_target_ACEInput
-  DEP_FILE = Engine\Source\ArcadiaCore\Modules\ACEInput\CMakeFiles\ACEInput.dir\Private\InputHandler.cpp.obj.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEInput/Public
-  OBJECT_DIR = Engine\Source\ArcadiaCore\Modules\ACEInput\CMakeFiles\ACEInput.dir
-  OBJECT_FILE_DIR = Engine\Source\ArcadiaCore\Modules\ACEInput\CMakeFiles\ACEInput.dir\Private
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target ACEInput
-
-
-#############################################
-# Link the static library Engine\Source\ArcadiaCore\Modules\ACEInput\libACEInput.a
-
-build Engine/Source/ArcadiaCore/Modules/ACEInput/libACEInput.a: CXX_STATIC_LIBRARY_LINKER__ACEInput_Debug Engine/Source/ArcadiaCore/Modules/ACEInput/CMakeFiles/ACEInput.dir/Private/InputHandler.cpp.obj
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = Engine\Source\ArcadiaCore\Modules\ACEInput\CMakeFiles\ACEInput.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = Engine\Source\ArcadiaCore\Modules\ACEInput\libACEInput.a
-  TARGET_PDB = ACEInput.a.dbg
-
-
-#############################################
-# Utility command for edit_cache
-
-build Engine/Source/ArcadiaCore/Modules/ACEInput/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Damien\CLionProjects\ACE\build-db\Engine\Source\ArcadiaCore\Modules\ACEInput && "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build Engine/Source/ArcadiaCore/Modules/ACEInput/edit_cache: phony Engine/Source/ArcadiaCore/Modules/ACEInput/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build Engine/Source/ArcadiaCore/Modules/ACEInput/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\Damien\CLionProjects\ACE\build-db\Engine\Source\ArcadiaCore\Modules\ACEInput && "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\Damien\CLionProjects\ACE -BC:\Users\Damien\CLionProjects\ACE\build-db"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build Engine/Source/ArcadiaCore/Modules/ACEInput/rebuild_cache: phony Engine/Source/ArcadiaCore/Modules/ACEInput/CMakeFiles/rebuild_cache.util
-
-# =============================================================================
 # Target aliases.
 
 build ACE: phony libACE.dll
@@ -450,6 +519,10 @@ build ACEInput: phony Engine/Source/ArcadiaCore/Modules/ACEInput/libACEInput.a
 build ACELogger: phony Engine/Source/ArcadiaCore/Modules/ACELogger/libACELogger.a
 
 build AModule: phony Engine/Source/ArcadiaCore/AModule/libAModule.a
+
+build BuildTool: phony Engine/Source/ArcadiaCore/Modules/BuildTool/BuildTool.exe
+
+build BuildTool.exe: phony Engine/Source/ArcadiaCore/Modules/BuildTool/BuildTool.exe
 
 build GameProject: phony Game/GameProject.exe
 
@@ -471,7 +544,7 @@ build libAModule.a: phony Engine/Source/ArcadiaCore/AModule/libAModule.a
 #############################################
 # Folder: C:/Users/Damien/CLionProjects/ACE/build-db
 
-build all: phony libACE.dll Engine/all Game/all Engine/Source/ArcadiaCore/AModule/all Engine/Source/ArcadiaCore/Modules/ACELogger/all Engine/Source/ArcadiaCore/Modules/ACEInput/all
+build all: phony libACE.dll Engine/Source/ArcadiaCore/Modules/ACELogger/all Engine/Source/ArcadiaCore/AModule/all Engine/Source/ArcadiaCore/Modules/ACEInput/all Engine/Source/ArcadiaCore/Modules/BuildTool/all Engine/all Game/all
 
 # =============================================================================
 
@@ -504,6 +577,13 @@ build Engine/Source/ArcadiaCore/Modules/ACELogger/all: phony Engine/Source/Arcad
 # =============================================================================
 
 #############################################
+# Folder: C:/Users/Damien/CLionProjects/ACE/build-db/Engine/Source/ArcadiaCore/Modules/BuildTool
+
+build Engine/Source/ArcadiaCore/Modules/BuildTool/all: phony Engine/Source/ArcadiaCore/Modules/BuildTool/BuildTool.exe
+
+# =============================================================================
+
+#############################################
 # Folder: C:/Users/Damien/CLionProjects/ACE/build-db/Game
 
 build Game/all: phony Game/GameProject.exe
@@ -515,14 +595,14 @@ build Game/all: phony Game/GameProject.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/Damien/CLionProjects/ACE/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Engine/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEInput/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Game/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/Damien/CLionProjects/ACE/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Engine/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEInput/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/BuildTool/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Game/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/Damien/CLionProjects/ACE/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Engine/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEInput/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Game/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake C$:/Users/Damien/CLionProjects/ACE/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Engine/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEInput/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/BuildTool/CMakeLists.txt C$:/Users/Damien/CLionProjects/ACE/Game/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
 
 
 #############################################

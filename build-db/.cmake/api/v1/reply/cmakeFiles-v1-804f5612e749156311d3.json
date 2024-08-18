@@ -151,19 +151,22 @@
 			"path" : "C:/Program Files/JetBrains/CLion 2024.1.4/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake"
 		},
 		{
-			"path" : "Engine/CMakeLists.txt"
-		},
-		{
-			"path" : "Game/CMakeLists.txt"
+			"path" : "Engine/Source/ArcadiaCore/Modules/ACELogger/CMakeLists.txt"
 		},
 		{
 			"path" : "Engine/Source/ArcadiaCore/AModule/CMakeLists.txt"
 		},
 		{
-			"path" : "Engine/Source/ArcadiaCore/Modules/ACELogger/CMakeLists.txt"
+			"path" : "Engine/Source/ArcadiaCore/Modules/ACEInput/CMakeLists.txt"
 		},
 		{
-			"path" : "Engine/Source/ArcadiaCore/Modules/ACEInput/CMakeLists.txt"
+			"path" : "Engine/Source/ArcadiaCore/Modules/BuildTool/CMakeLists.txt"
+		},
+		{
+			"path" : "Engine/CMakeLists.txt"
+		},
+		{
+			"path" : "Game/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

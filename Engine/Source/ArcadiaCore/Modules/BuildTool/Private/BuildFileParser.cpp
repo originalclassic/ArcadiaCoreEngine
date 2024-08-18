@@ -1,13 +1,13 @@
 // src/BuildFileParser.cpp
-#include "BuildFileParser.h"
+#include "../Public/BuildFileParser.h"
 #include <fstream>
 #include <iostream>
 
-void BuildFileParser::Parse(const std::string& filePath) {
+bool BuildFileParser::Parse(const std::string& filePath) {
     std::ifstream file(filePath);
     if (!file.is_open()) {
         std::cerr << "Could not open file: " << filePath << std::endl;
-        return;
+        return false;  // Indicate that parsing failed
     }
 
     std::string line;
@@ -18,4 +18,7 @@ void BuildFileParser::Parse(const std::string& filePath) {
         }
         // Add more parsing logic as needed
     }
+
+    file.close();
+    return true;  // Indicate that parsing was successful
 }
