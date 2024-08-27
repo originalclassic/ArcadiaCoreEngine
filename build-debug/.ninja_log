@@ -1,0 +1,7 @@
+# ninja log v6
+33	133	7464665478841907	Engine/Source/ArcadiaCore/Modules/BuildTool/CMakeFiles/BuildTool.dir/main.cpp.obj	f0e8d1308d8946c1
+26	650	7464665478766840	Engine/Source/ArcadiaCore/Modules/BuildTool/CMakeFiles/BuildTool.dir/Private/BuildFileParser.cpp.obj	2b0998a1c6daced
+9	737	7464665478605174	Engine/Source/ArcadiaCore/Modules/ACELogger/CMakeFiles/ACELogger.dir/Private/ACELogger.cpp.obj	789a35712d3e7e3
+737	903	7464665485884761	Engine/Source/ArcadiaCore/Modules/ACELogger/libACELogger.a	4b0530c2153812ca
+18	996	7464665478691535	Engine/Source/ArcadiaCore/Modules/BuildTool/CMakeFiles/BuildTool.dir/Private/BuildTool.cpp.obj	a70ee4ffdea5ac42
+996	1156	7464665488476417	Engine/Source/ArcadiaCore/Modules/BuildTool/BuildTool.exe	7b1bc6a0c0890f3e
