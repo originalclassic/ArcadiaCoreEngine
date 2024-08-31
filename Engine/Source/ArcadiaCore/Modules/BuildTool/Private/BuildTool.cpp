@@ -45,7 +45,8 @@ void BuildTool::Run(int argc, char* argv[]) {
     logger.Log("Build process completed.", LogLevel::Info);
 
     // Compile the build tool and parser (if needed)
-    std::system("g++ -c src/BuildTool.cpp -o BuildTool.o");
-    std::system("g++ -c src/BuildFileParser.cpp -o BuildFileParser.o");
+    std::system("g++ -c BuildTool.cpp -o BuildTool.o");
+    std::system("g++ -c BuildFileParser.cpp -o BuildFileParser.o");
     std::system("g++ BuildTool.o BuildFileParser.o -o BuildTool");
 }
+// TODO Fix g++

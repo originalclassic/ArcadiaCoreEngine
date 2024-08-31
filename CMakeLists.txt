@@ -12,6 +12,7 @@ add_subdirectory(Engine/Source/ArcadiaCore/Modules/ACEInput)
 add_subdirectory(Engine/Source/ArcadiaCore/Modules/BuildTool)  # BuildTool depends on ACELogger
 add_subdirectory(Engine)
 add_subdirectory(Game)
+add_subdirectory(Engine/Source/ArcadiaCore/Modules/Launch)
 
 # Include directories for the whole project
 include_directories(
@@ -35,3 +36,4 @@ add_library(ACE SHARED ${ENGINE_SOURCES})
 
 # Link ACE with AModule and ACELogger
 target_link_libraries(ACE PRIVATE AModule ACELogger)
+target_link_libraries(GameExecutable PRIVATE Launch)

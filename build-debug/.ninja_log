@@ -1,7 +1,18 @@
 # ninja log v6
 33	133	7464665478841907	Engine/Source/ArcadiaCore/Modules/BuildTool/CMakeFiles/BuildTool.dir/main.cpp.obj	f0e8d1308d8946c1
 26	650	7464665478766840	Engine/Source/ArcadiaCore/Modules/BuildTool/CMakeFiles/BuildTool.dir/Private/BuildFileParser.cpp.obj	2b0998a1c6daced
-9	737	7464665478605174	Engine/Source/ArcadiaCore/Modules/ACELogger/CMakeFiles/ACELogger.dir/Private/ACELogger.cpp.obj	789a35712d3e7e3
 737	903	7464665485884761	Engine/Source/ArcadiaCore/Modules/ACELogger/libACELogger.a	4b0530c2153812ca
-18	996	7464665478691535	Engine/Source/ArcadiaCore/Modules/BuildTool/CMakeFiles/BuildTool.dir/Private/BuildTool.cpp.obj	a70ee4ffdea5ac42
-996	1156	7464665488476417	Engine/Source/ArcadiaCore/Modules/BuildTool/BuildTool.exe	7b1bc6a0c0890f3e
+9	737	7464665478605174	Engine/Source/ArcadiaCore/Modules/ACELogger/CMakeFiles/ACELogger.dir/Private/ACELogger.cpp.obj	789a35712d3e7e3
+12	796	7464674856163976	Engine/Source/ArcadiaCore/Modules/BuildTool/CMakeFiles/BuildTool.dir/Private/BuildTool.cpp.obj	a70ee4ffdea5ac42
+796	950	7464674864005717	Engine/Source/ArcadiaCore/Modules/BuildTool/BuildTool.exe	7b1bc6a0c0890f3e
+35	221	7466614165181546	CMakeFiles/ACE.dir/Engine/Source/ArcadiaCore/Private/UACERenderer.cpp.obj	7242bcd428b3056c
+43	1225	7466614165266616	CMakeFiles/ACE.dir/Engine/Source/ArcadiaCore/Private/UACEEngine.cpp.obj	18096e82eecc4ced
+52	1250	7466614165351681	CMakeFiles/ACE.dir/Engine/Source/ArcadiaCore/Private/EngineConfig.cpp.obj	2ab0bebd76cefd52
+19	1422	7466614165019573	Engine/Source/ArcadiaCore/AModule/CMakeFiles/AModule.dir/Private/ModuleManager.cpp.obj	f11971dec0533d08
+27	1658	7466614165094958	Engine/Source/ArcadiaCore/AModule/CMakeFiles/AModule.dir/Private/INIParser.cpp.obj	67ccf091878f8ec5
+8	1755	7466614164914503	Engine/Source/ArcadiaCore/AModule/CMakeFiles/AModule.dir/Private/JSONParser.cpp.obj	2a01f93ac023568e
+1755	2060	7466614182377183	Engine/Source/ArcadiaCore/AModule/libAModule.a	198c216ec3c45292
+2060	2280	7466614187509249	libACE.dll	357e56b63b58210b
+2060	2280	7466614187509249	libACE.dll.a	357e56b63b58210b
+14	2936	7466614190093114	Game/CMakeFiles/GameProject.dir/Source/GameProject/Private/main.cpp.obj	87b16ec1d742ad9d
+2940	3108	7466614219354475	Game/GameProject.exe	61cf34f61b778bb
