@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "Engine/Source/ArcadiaCore/Modules/BuildTool",
+		"source" : "Engine/Source/ArcadiaCore/Modules/BuildTool"
+	}
+}

@@ -1,30 +1,36 @@
-# ACE/Engine/CMakeLists.txt
 cmake_minimum_required(VERSION 3.28)
 project(ACEEngine)
 
-# Set the C++ standard
+# Set C++ standard
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Add subdirectories
-add_subdirectory(Source/ArcadiaCore/Modules/ACEMemoryManager)
-
-# Add your engine source files here
+# Define source files for the engine
 set(ENGINE_SOURCES
-        # List your source files here
+        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/Private/UACERenderer.cpp
+        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/Private/UACEEngine.cpp
+        # Add all other source files here
 )
 
-# Create the main engine library or executable
+# Create the static library
 add_library(ACEEngine STATIC ${ENGINE_SOURCES})
 
-# Link the ACEMemoryManager library to the engine
-target_link_libraries(ACEEngine PRIVATE ACEMemoryManager)
-
-# Optionally, specify include directories for the engine
+# Specify include directories for the engine
 target_include_directories(ACEEngine PUBLIC
-        ${CMAKE_CURRENT_SOURCE_DIR}/Source/ArcadiaCore/Modules/ACEMemoryManager/include
-        ${CMAKE_CURRENT_SOURCE_DIR}/Source/ArcadiaCore/include
+        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/Public           # Core and other public headers
+        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/Public/Platform  # Platform-specific headers
+        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/Public/Math      # Math headers
+        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/Public/Memory    # Memory management headers
+        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/Public/Logging   # Logging headers
+        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/AModule/Public   # AModule headers
+        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/Modules/ACEMemoryManager/include # ACEMemoryManager headers
+        ${CMAKE_SOURCE_DIR}/Engine/Source/ArcadiaCore/Modules/ACELogger/Public        # ACELogger headers
 )
 
-# Optionally, add any other required directories
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Source/ArcadiaCore/include)
+# Link against required libraries
+target_link_libraries(ACEEngine PRIVATE
+        ACEMemoryManager
+        AModule
+        ACELogger
+        # Add any additional libraries needed here
+)

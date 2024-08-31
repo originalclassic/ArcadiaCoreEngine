@@ -1,0 +1,12 @@
+{
+    "ModuleName": "ACEInput",
+    "Description": "Input handling module for ACE Engine, providing functionalities to manage and process game input.",
+    "Version": "0.1.0",
+    "Dependencies": [],
+    "PublicIncludeDirectories": [
+        "include"
+    ],
+    "SourceFiles": [
+        "Private/InputHandler.cpp"
+    ]
+}

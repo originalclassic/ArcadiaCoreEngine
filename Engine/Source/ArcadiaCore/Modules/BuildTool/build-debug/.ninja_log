@@ -1,0 +1,5 @@
+# ninja log v6
+20	108	7464665374235581	CMakeFiles/BuildTool.dir/main.cpp.obj	55ccdbefba1424db
+13	550	7464665374170541	CMakeFiles/BuildTool.dir/Private/BuildFileParser.cpp.obj	88f25a89efdae66e
+6	870	7464665374095317	CMakeFiles/BuildTool.dir/Private/BuildTool.cpp.obj	f71ec60a912f69c
+8	782	7464675113323656	CMakeFiles/BuildTool.dir/Private/BuildTool.cpp.obj	f71ec60a912f69c

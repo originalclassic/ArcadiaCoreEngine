@@ -15,6 +15,33 @@
 ########################
 
 //Value Computed by CMake
+ACEEngine_BINARY_DIR:STATIC=C:/Users/Damien/CLionProjects/ACE/build-debug/Engine
+
+//Value Computed by CMake
+ACEEngine_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+ACEEngine_SOURCE_DIR:STATIC=C:/Users/Damien/CLionProjects/ACE/Engine
+
+//Value Computed by CMake
+ACEInput_BINARY_DIR:STATIC=C:/Users/Damien/CLionProjects/ACE/build-debug/Engine/Source/ArcadiaCore/Modules/ACEInput
+
+//Value Computed by CMake
+ACEInput_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+ACEInput_SOURCE_DIR:STATIC=C:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACEInput
+
+//Value Computed by CMake
+ACELogger_BINARY_DIR:STATIC=C:/Users/Damien/CLionProjects/ACE/build-debug/Engine/Source/ArcadiaCore/Modules/ACELogger
+
+//Value Computed by CMake
+ACELogger_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+ACELogger_SOURCE_DIR:STATIC=C:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/ACELogger
+
+//Value Computed by CMake
 ACE_BINARY_DIR:STATIC=C:/Users/Damien/CLionProjects/ACE/build-debug
 
 //Value Computed by CMake
@@ -22,6 +49,24 @@ ACE_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 ACE_SOURCE_DIR:STATIC=C:/Users/Damien/CLionProjects/ACE
+
+//Value Computed by CMake
+AModule_BINARY_DIR:STATIC=C:/Users/Damien/CLionProjects/ACE/build-debug/Engine/Source/ArcadiaCore/AModule
+
+//Value Computed by CMake
+AModule_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+AModule_SOURCE_DIR:STATIC=C:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/AModule
+
+//Value Computed by CMake
+BuildTool_BINARY_DIR:STATIC=C:/Users/Damien/CLionProjects/ACE/build-debug/Engine/Source/ArcadiaCore/Modules/BuildTool
+
+//Value Computed by CMake
+BuildTool_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+BuildTool_SOURCE_DIR:STATIC=C:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/BuildTool
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=C:/Program Files/JetBrains/CLion 2024.1.4/bin/mingw/bin/addr2line.exe
@@ -251,6 +296,27 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Value Computed by CMake
+GameProject_BINARY_DIR:STATIC=C:/Users/Damien/CLionProjects/ACE/build-debug/Game
+
+//Value Computed by CMake
+GameProject_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+GameProject_SOURCE_DIR:STATIC=C:/Users/Damien/CLionProjects/ACE/Game
+
+//Value Computed by CMake
+Launch_BINARY_DIR:STATIC=C:/Users/Damien/CLionProjects/ACE/build-debug/Engine/Source/ArcadiaCore/Modules/Launch
+
+//Value Computed by CMake
+Launch_IS_TOP_LEVEL:STATIC=OFF
+
+//Dependencies for the target
+Launch_LIB_DEPENDS:STATIC=general;ACELogger;general;ACEInput;
+
+//Value Computed by CMake
+Launch_SOURCE_DIR:STATIC=C:/Users/Damien/CLionProjects/ACE/Engine/Source/ArcadiaCore/Modules/Launch
+
 
 ########################
 # INTERNAL cache entries
@@ -354,7 +420,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
